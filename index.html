@@ -1,33 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Roboto+Mono:ital,wght@1,409&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,409&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Digital Services</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='styleshet.css'>
-    <script src='main.js'></script>
+    <link rel="icon" href="media/logods.png" type="image/png">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        emailjs.init('kre3NblRon4NegvWO')
+    </script>
 </head>
 <body>
-    <header>
-        <h1>Digital Services</h1>
-        <p>Bienvenidos a Digital Services, siguenos en nuestras redes sociales!</p>
-    </header>
-    <main>
-        <section id="redes">
-            <h2>Nuestras Redes</h2>
-            <ul>
-                <li><a href="https://www.instagram.com/digitalservirces" target="_blank">Instagram</a></li>
-                <li><a href="https://www.linkedin.com/in/digital-services-a82940355/" target="_blank">Linktree</a></li>
-                <li><a href="https://www.youtube.com/@AcademiaDigitalServices" target="_blank">Youtube</a></li>
-                <li><a href="https://www.tiktok.com/@digital._.service?_t=ZM-8uZv1W7koti&_r=1" target="_blank">Tik Tok</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100084432777557" target="_blank">Facebook</a></li>
-            </ul>
-        </section>
-        <section id="contacto">
-            <h2>Contactanos</h2>
-            <p>
-                Si tienes alguna duda o consulta, no dudes en contactarnos a través de nuestras redes sociales o por correo electrónico.
-        </section>
+    <div id="contenido">
+        <header>
+            <h1>Digital Services</h1> <img src="media/logods.png" alt="logo" id="logods">
+            <p>Bienvenidos a Digital Services, siguenos en nuestras redes sociales!</p>
+        </header>
+        <main>
+            <div id="redes">
+                <h2>Nuestras Redes</h2>
+                <ul id="redes-sociales" type="none">
+                    <li>
+                        <a href="https://www.instagram.com/digitalservirces" target="_blank">
+                        <img src="/media/instagram.png" alt="instagramLogo" class="logoredes"> @digitalServirces</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/digital-services-a82940355/" target="_blank">
+                            <img src="media/linkedin.png" alt="linkedinLogo" class="logoredes"> @digital-services</a>
+                        </li>
+                    <li>
+                        <a href="https://www.youtube.com/@AcademiaDigitalServices" target="_blank">
+                            <img src="media/video.png" alt="youtubeLogo" class="logoredes"> @DigitalServices</a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/@digital._.service?_t=ZM-8uZv1W7koti&_r=1" target="_blank">
+                            <img src="media/tiktoklogo.png" alt="tiktok" class="logoredes">@digital._.service</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=100084432777557" target="_blank">
+                            <img src="media/facebook.png" alt="facebookLogo" class="logoredes"> @digitalservices</a>
+                    </li>
+                    <li>
+                        <a href="https://chat.whatsapp.com/K1hMjDuc4HQFDVQ3DqDEIN" target="_blank">
+                            <img src="media/whatsapp.png" alt="whatsappLogo" class="logoredes"> Digital Services</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="contacto">
+                <h2>contactanos</h2>
+                <form id="form">
+                    <div id="formdatosu">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div id="formmes">
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" required></textarea>                    
+                        <input type="submit" value="Enviar" id="button">
+                    </div>
+                </form>   
+                <script src="EnviarMensaje.js">
+                </script>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
