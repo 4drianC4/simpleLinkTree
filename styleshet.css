@@ -1,0 +1,184 @@
+body{
+    background-image: linear-gradient(to bottom, #000000, #9e56e0);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-family: "Rubik", sans-serif;
+}
+
+#contenido{
+    background-image: url(media/background.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    border-radius: 10px;
+}
+
+header{
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #ffffff, #9d56e009);
+}
+
+h1{
+    display: inline-block;
+    font-family: "Handjet", sans-serif;
+    font-variation-settings:
+      "ELGR" 1,
+      "ELSH" 2;
+    font-size: 3.5em;
+}
+#logods{
+    display: inline-block;
+    width: 10vh;
+    height: 7vh;
+    margin-left: 20px;
+}
+
+header p{
+    color: white;
+    font-size: 1.5em;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.logoredes{
+    width: 5vh;
+    height: 5vh;
+    vertical-align: middle;
+    margin: 20px;
+}
+
+main{
+    justify-content: center;
+    align-items: center;
+}
+
+main ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+main ul li{
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #050505b2;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    transition: transform 0.3s;
+}
+
+main ul li:hover{
+    transform: scale(1.05);
+}
+
+main ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4em;
+    display: block;
+    padding: 10px;
+    padding-left: 18vi;
+}
+
+h2{
+    color: white;
+    font-size: 2em;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #050505b2;
+    text-align: center;
+}
+
+#form{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#formdatosu{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#formdatosu input{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+#formdatosu label{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    background-color: #050505b2;
+}
+
+#formmes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+#formmes textarea{
+    resize: none;
+
+    width: 100%;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+#formmes label{
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    background-color: #050505b2;
+}  
+#formmes input[type="submit"]{
+    background-color: #000000;
+    min-width: 320px;
+    min-height: 50px;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#formmes input[type="submit"]:hover{
+    background-color: #9e56e0;
+    transition: background-color 0.5s;
+    transition: transform 0.5s;
+    transform: scale(1.05);
+    transition: color 0.5s;
+    color: #000000;
+}
