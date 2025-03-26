@@ -219,9 +219,14 @@ h2{
         box-sizing: border-box;
         font-size: 1.2em;
     }
-    #formmes label,input[type="submit"], textarea{
+    #formmes label, textarea{
         font-size: 1.2em;
         width: 100%;
         box-sizing: border-box;
+    }
+    #formmes input[type="submit"]{
+        font-size: 1.2em;
+        min-width: 100%;
+        min-height: 50px;
     }
 }
